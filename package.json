@@ -1,0 +1,33 @@
+{
+  "name": "@htmltools/hdom",
+  "version": "0.1.0",
+  "description": "Tools to interact with the HTML DOM.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/html-tools/hdom.git"
+  },
+  "homepage": "https://github.com/html-tools/hdom",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/hdom.js"
+  },
+  "types": "./lib/hdom.d.ts",
+  "scripts": {
+    "check": "npm run eslint && npm run tsc",
+    "eslint": "eslint",
+    "make-tar": "npm pack --pack-destination ignored/dist",
+    "prepack": "tsc lib/hdom.js --declaration --allowJs --emitDeclarationOnly",
+    "prettier": "prettier -l .",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "eslint": "^9.38.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  }
+}
