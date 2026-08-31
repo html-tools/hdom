@@ -1,6 +1,6 @@
 {
   "name": "@htmltools/hdom",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Tools to interact with the HTML DOM.",
   "license": "MIT",
   "repository": {
